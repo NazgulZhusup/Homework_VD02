@@ -1,0 +1,74 @@
+.card-container {
+    display: flex; /* Используем Flexbox для горизонтального выравнивания карточек */
+    justify-content: center; /* Центрируем карточки по горизонтали */
+    gap: 20px; /* Промежуток между карточками */
+
+.card {
+    width: 400px;
+    height: 550px;
+    background-color: #FBCEB1;
+    border-radius: 40px;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: 1s;
+}
+
+.photo {
+    width: 100%; /* Фото занимает всю ширину карточки */
+    height: 70%;
+    align-items: center;
+    overflow: hidden; /* Обрезка углов фото */
+    border-top-left-radius: 40px; /* Скругление верхних углов фото */
+    border-top-right-radius: 40px; /* Скругление верхних углов фото */
+    border-bottom-left-radius: 40px; /* Скругление верхних углов фото */
+    border-bottom-right-radius: 40px; /* Скругление верхних углов фото */
+    display: flex; /* Использование flexbox для центрирования */
+    justify-content: center; /* Центрирование фото по горизонтали */
+    align-items: center; /* Центрирование фото по вертикали */
+}
+
+.photo img {
+    width: auto; /* Фото занимает всю ширину карточки */
+    height: 100%; /* Высота фото определяется автоматически */
+    border-top-left-radius: 40px; /* Скругление верхних углов фото */
+    border-top-right-radius: 40px; /* Скругление верхних углов фото */
+    border-bottom-left-radius: 40px; /* Скругление верхних углов фото */
+    border-bottom-right-radius: 40px; /* Скругление верхних углов фото */
+
+}
+
+
+.info {
+    font-color:#003153;
+    flex: 1;
+    padding: 20px; /* Уменьшение padding для более компактного размещения */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; /* Вертикальное выравнивание содержимого */
+    justify-content: center; /* Центрирование содержимого по вертикали */
+    align-items: center; /* Центрирование содержимого по горизонтали */
+    text-align: center; /* Центрирование текста */
+    overflow-y: auto;
+    margin-top: -20px; /* поднимаем содержимое чуть выше */
+    color: #003153; /* Цвет текста */
+}
+
+.info p {
+    margin-top: -10px; /* поднимаем содержимое чуть выше */
+    line-height: 0.8; /* Межстрочное расстояние для тегов <h3> */
+
+}
+
+.card:hover {
+    background-color: #FF033E;
+    width: 450px;
+    height: 600px;
+    border-radius: 40px;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: 1s;
+}
