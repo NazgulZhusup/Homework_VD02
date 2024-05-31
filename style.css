@@ -12,7 +12,8 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    transition: 1s;
+    transition: transform 1s, background-color 1s, width 1s, height 1s;
+
 }
 
 .photo {
@@ -36,6 +37,7 @@
     border-top-right-radius: 40px; /* Скругление верхних углов фото */
     border-bottom-left-radius: 40px; /* Скругление верхних углов фото */
     border-bottom-right-radius: 40px; /* Скругление верхних углов фото */
+    transition: transform 1s;
 
 }
 
@@ -62,7 +64,7 @@
 }
 
 .card:hover {
-    background-color: #FF033E;
+    background-color: #30D5C8;
     width: 450px;
     height: 600px;
     border-radius: 40px;
@@ -70,5 +72,9 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    transition: 1s;
+    transform: scale(1.0); /* Увеличиваем карточку при наведении */
+}
+
+.card:hover .photo img {
+    transform: scale(1.0); /* Увеличиваем изображение пропорционально при наведении */
 }
